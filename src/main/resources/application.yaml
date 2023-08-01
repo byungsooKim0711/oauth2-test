@@ -1,0 +1,14 @@
+# https://docs.spring.io/spring-security/reference/servlet/oauth2/login/core.html
+
+spring:
+  profiles:
+    active: local
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github-login:
+            provider: github
+            client-id: ${ your-client-id }
+            client-secret: ${ your-client-secret }
